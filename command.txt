@@ -1,0 +1,31 @@
+# creation d'un environnement virtuel
+
+-- permet d'installer l'environnement virtuel
+py -3 -m venv .venv
+-- Activate the virtual environment
+source .venv/scripts/activate
+
+#Update pip in the virtual environment
+python -m pip install --upgrade pip
+
+
+#Install Django in the virtual environment
+python -m pip install django
+
+
+
+-----------------------------------------------------------------
+django-admin startproject web_project .
+--django-admin
+# django-app is the fonctionality that allows creating users in a django web_project~
+--startproject web_project project_folder
+# the startproject creates the project with the giving name(web_project) in the giving folder
+# . stands for <<create the project in the current directory
+
+
+-------------------------------------------------------------
+#Create an empty development database or verify all modifications that occures and that can change something in the database
+python manage.py migrate
+
+#create new migration instance if there are modifications in the database
+python manage.py makemigrations
