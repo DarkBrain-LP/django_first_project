@@ -29,3 +29,19 @@ python manage.py migrate
 
 #create new migration instance if there are modifications in the database
 python manage.py makemigrations
+
+--------------------------------------------------------------------------------------------------------------------------------------
+# Create a super user
+python manage.py createsuperuser
+
+# create a new app(which will be associated to a new url)
+python manage.py runserver
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+#execute the app
+python manage.py runserver
